@@ -40,11 +40,11 @@ def indexNum(pageNum):
 
     return render_template('index.html', titles = titles_df.values, curr_pg = currPage, page_nums = pageArr, repo = repo_data)
 
-def pageArray(rows)
+def pageArray(rows):
     pages = (rows // 10)
     pgsLeft = rows % 10
 
-    if (pgsLeft > 0);
+    if (pgsLeft > 0):
         pages += 1
 
     if (pages == 0):
