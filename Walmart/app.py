@@ -14,7 +14,7 @@ app = Flask(__name__)
 @app.route('/')
 def index():
     
-    rows = data2.hape[0]
+    rows = data2.shape[0]
     pageArr = pageArray(rows)
 
     # Takes the info for the First 10 files
